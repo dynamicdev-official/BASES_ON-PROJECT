@@ -1,0 +1,49 @@
+# bases_on — .gitignore
+
+# Environment
+.env
+*.pyc
+__pycache__/
+*.pyo
+*.egg-info/
+dist/
+build/
+
+# Node
+node_modules/
+web/node_modules/
+web/yarn.lock
+web/.yarn/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.antigravity
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Docker volumes
+pgadmin-data/
+
+pgadmin/**
+
+web/pgadmin/static/js/generated/
+*.log
+
+# Runtime data (sensitive — DB, sessions, logs)
+data/
+
+# Debug & temp scripts
+tester.py
+pip_debug.txt
+localerr.txt
+
+# Config overrides
+web/config_local.py
+web/config_distro.py

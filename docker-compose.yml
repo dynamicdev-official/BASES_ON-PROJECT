@@ -1,0 +1,25 @@
+services:
+  bases_on:
+    container_name: bases_on
+    image: bases_on:latest
+    build: .
+    ports:
+      - "5050:80"
+    volumes:
+      - bases_on-data:/var/lib/bases_on
+      - pgadmin-data:/var/lib/pgadmin
+    environment:
+      PGADMIN_DEFAULT_EMAIL: ${EMAIL:-bases_on@dynamicdev.asia}
+      PGADMIN_DEFAULT_PASSWORD: ${PASSWORD:-changeme}
+      PGADMIN_LISTEN_PORT: 80
+    networks:
+      - dynamicdev-net
+    restart: unless-stopped
+
+volumes:
+  pgadmin-data:
+  bases_on-data:
+
+networks:
+  dynamicdev-net:
+    external: true
