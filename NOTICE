@@ -1,0 +1,309 @@
+NOTICE
+
+================================================================================
+BASES_ON — PostgreSQL Database Management Interface
+================================================================================
+
+Copyright © 2026 dynamicdev_ | BASES_ON PROJECT
+Original Work: Copyright © pgAdmin Development Team
+
+Website:        https://dynamicdev.asia
+Contact:        bases_on@dynamicdev.asia
+Repository:     https://github.com/dynamicdev-official/bases_on
+License:        Apache License 2.0
+
+================================================================================
+ATTRIBUTION & DERIVATIVE WORK NOTICE
+================================================================================
+
+This project is a DERIVATIVE WORK based on pgAdmin 4, an open-source PostgreSQL 
+administration and management tool developed by the pgAdmin Development Team.
+
+ORIGINAL PROJECT INFORMATION:
+------------------------------
+  Project Name:     pgAdmin 4
+  Original Authors: The pgAdmin Development Team
+  Repository:       https://github.com/pgadmin-org/pgadmin4
+  Website:          https://www.pgadmin.org
+  Original License: PostgreSQL License (BSD-like permissive license)
+
+NATURE OF MODIFICATIONS:
+------------------------
+This derivative work (bases_on) contains substantial modifications to the 
+original pgAdmin 4 source code, including but not limited to:
+
+  1. Complete UI/UX rebrand with custom dark crimson theme (#7F1D1D)
+  2. Custom branding system (branding.py module)
+  3. Inter font family integration system-wide
+  4. Custom logo assets (SVG gradient logo + PNG variants)
+  5. Footer copyright integration on all pages
+  6. Modified Material-UI theme configuration
+  7. Custom login/security page UI redesign
+  8. Docker image restructuring with Alpine Linux optimization
+  9. File path modifications (/var/lib/bases_on instead of /var/lib/pgadmin)
+  10. Entrypoint script modifications for custom paths
+
+DETAILED MODIFICATION LOG:
+--------------------------
+A comprehensive list of all modifications is maintained in the file:
+  bases_on_modifications.md
+
+This document provides line-by-line attribution of changes made to the 
+original pgAdmin 4 source code.
+
+COMPLIANCE WITH ORIGINAL LICENSE:
+----------------------------------
+This derivative work complies with the PostgreSQL License terms:
+
+  ✓ Original copyright notices retained in source files
+  ✓ Modifications clearly marked with "Modified by dynamicdev_" comments
+  ✓ Original license terms preserved (see LICENSE file)
+  ✓ Prominent notice of derivative work nature (this file)
+
+================================================================================
+THIRD-PARTY SOFTWARE COMPONENTS
+================================================================================
+
+This software includes or depends upon the following third-party components:
+
+1. pgAdmin 4
+   Copyright: pgAdmin Development Team
+   License:   PostgreSQL License (BSD-like)
+   Website:   https://www.pgadmin.org
+
+2. PostgreSQL
+   Copyright: PostgreSQL Global Development Group
+   License:   PostgreSQL License
+   Website:   https://www.postgresql.org
+
+3. Python
+   Copyright: Python Software Foundation
+   License:   PSF License (BSD-compatible)
+   Website:   https://www.python.org
+
+4. Flask Web Framework
+   Copyright: Pallets Team
+   License:   BSD 3-Clause License
+   Website:   https://flask.palletsprojects.com
+
+5. React
+   Copyright: Meta Platforms, Inc. and affiliates
+   License:   MIT License
+   Website:   https://react.dev
+
+6. Material-UI (MUI)
+   Copyright: MUI Team
+   License:   MIT License
+   Website:   https://mui.com
+
+7. SQLAlchemy
+   Copyright: Michael Bayer and contributors
+   License:   MIT License
+   Website:   https://www.sqlalchemy.org
+
+8. psycopg2
+   Copyright: Federico Di Gregorio and contributors
+   License:   LGPL with exceptions (BSD-compatible)
+   Website:   https://www.psycopg.org
+
+9. cryptography
+   Copyright: Individual contributors
+   License:   Apache License 2.0 / BSD License (dual-licensed)
+   Website:   https://cryptography.io
+
+10. Alpine Linux Base Image
+    Copyright: Alpine Linux Development Team
+    License:   Multiple (primarily MIT, GPL for kernel)
+    Website:   https://alpinelinux.org
+
+11. Node.js
+    Copyright: OpenJS Foundation and contributors
+    License:   MIT License
+    Website:   https://nodejs.org
+
+12. Yarn Package Manager
+    Copyright: Yarn Contributors
+    License:   BSD 2-Clause License
+    Website:   https://yarnpkg.com
+
+13. Webpack
+    Copyright: Tobias Koppers @sokra
+    License:   MIT License
+    Website:   https://webpack.js.org
+
+14. Babel
+    Copyright: Sebastian McKenzie and contributors
+    License:   MIT License
+    Website:   https://babeljs.io
+
+15. Inter Font Family
+    Copyright: Rasmus Andersson
+    License:   SIL Open Font License 1.1
+    Website:   https://rsms.me/inter/
+
+16. Google Fonts Infrastructure
+    Copyright: Google LLC
+    License:   Various (fonts individually licensed)
+    Website:   https://fonts.google.com
+
+================================================================================
+APACHE SOFTWARE FOUNDATION COMPONENTS
+================================================================================
+
+This product includes software developed by The Apache Software Foundation
+(http://www.apache.org/), including but not limited to:
+
+  - Apache HTTP Server components
+  - Apache Commons libraries
+  - Various Python packages with Apache licensing
+
+Full list available in upstream pgAdmin 4 dependency tree.
+
+================================================================================
+JAVASCRIPT & NODE.JS ECOSYSTEM COMPONENTS
+================================================================================
+
+This software bundles numerous JavaScript libraries distributed via npm/Yarn.
+Full dependency tree available via:
+
+  cd web && yarn licenses list
+
+Key frontend dependencies include (MIT License unless noted):
+
+  - axios (HTTP client)
+  - lodash (Utility library)
+  - moment.js (Date/time library)
+  - ace-editor (Code editor)
+  - brace (Browserified Ace)
+  - codemirror (Code editor alternative)
+  - react-dom (React rendering)
+  - react-router (Routing library)
+  - redux (State management)
+
+================================================================================
+FONT LICENSING
+================================================================================
+
+INTER FONT FAMILY:
+  Copyright:  2016-2023 Rasmus Andersson (https://rsms.me/)
+  License:    SIL Open Font License 1.1
+  Repository: https://github.com/rsms/inter
+  
+  This Font Software is licensed under the SIL Open Font License, Version 1.1.
+  The license is available at: https://scripts.sil.org/OFL
+  
+  Full license text available in: web/pgadmin/static/fonts/inter/LICENSE.txt
+
+================================================================================
+DOCKER BASE IMAGE COMPONENTS
+================================================================================
+
+ALPINE LINUX:
+  Copyright:  Alpine Linux Development Team
+  License:    Various open-source licenses (see Alpine package database)
+  Website:    https://alpinelinux.org/about/
+
+Alpine packages used in this image include:
+  - python3 (PSF License)
+  - postgresql-client (PostgreSQL License)
+  - libpq (PostgreSQL License)
+  - nginx (BSD 2-Clause License)
+  - Various system libraries (GPL, LGPL, MIT, BSD)
+
+================================================================================
+TRADEMARK NOTICE
+================================================================================
+
+"pgAdmin" is a trademark of the pgAdmin Development Team.
+"PostgreSQL" and the PostgreSQL elephant logo are trademarks or registered 
+trademarks of the PostgreSQL Community Association of Canada.
+
+This derivative work (bases_on) is NOT affiliated with, endorsed by, or 
+sponsored by:
+  - The pgAdmin Development Team
+  - PostgreSQL Global Development Group
+  - PostgreSQL Community Association
+
+The use of "pgAdmin" in this notice is solely for attribution and comparison 
+purposes as required by the original license terms.
+
+"dynamicdev_" and "bases_on" are trademarks of dynamicdev_ IT Services.
+
+================================================================================
+DISCLAIMER OF WARRANTY
+================================================================================
+
+Unless required by applicable law or agreed to in writing, software distributed
+under the Apache License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES
+OR CONDITIONS OF ANY KIND, either express or implied.
+
+See the LICENSE file for the specific language governing permissions and
+limitations under the License.
+
+This derivative work inherits the same warranty disclaimer from the original
+pgAdmin 4 project.
+
+================================================================================
+PATENT GRANT
+================================================================================
+
+This software is distributed under the Apache License 2.0, which includes an
+express grant of patent rights from contributors to users. See LICENSE file
+Section 3 for full patent grant terms.
+
+================================================================================
+EXPORT CONTROL NOTICE
+================================================================================
+
+This software may be subject to export control regulations. Users are 
+responsible for compliance with all applicable export control laws and 
+regulations, including the U.S. Export Administration Regulations.
+
+This software includes cryptography functionality.
+
+================================================================================
+CONTACT INFORMATION
+================================================================================
+
+For questions about this derivative work (bases_on):
+  Email:      bases_on@dynamicdev.asia
+  Website:    https://dynamicdev.asia
+  Repository: https://github.com/dynamicdev-official/bases_on
+
+For questions about the original pgAdmin 4 project:
+  Website:    https://www.pgadmin.org
+  Repository: https://github.com/pgadmin-org/pgadmin4
+  Mailing:    pgadmin-support@postgresql.org
+
+================================================================================
+MODIFICATION HISTORY
+================================================================================
+
+2026-04-05: Initial fork and rebrand as bases_on by dynamicdev_
+            - Complete UI rebrand with dark crimson theme
+            - Custom branding system implementation
+            - Docker image optimization for Alpine Linux
+            - Inter font integration
+            - Custom logo and footer system
+
+(Future modifications will be documented here and in git commit history)
+
+================================================================================
+FULL LICENSE TEXTS
+================================================================================
+
+The full text of all applicable licenses can be found in:
+
+  LICENSE                 - Apache License 2.0 (this project)
+  web/LICENSE             - PostgreSQL License (original pgAdmin 4)
+  web/docs/en_US/LICENSE  - pgAdmin 4 documentation license
+
+Individual component licenses are maintained in their respective source
+directories and package metadata.
+
+================================================================================
+END OF NOTICE
+================================================================================
+
+Last Updated: 2026-04-05
+Maintained by: dynamicdev_ | BASES_ON PROJECT
