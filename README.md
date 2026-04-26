@@ -1,4 +1,6 @@
 <div align="center">
+    
+<img src="assets/bases_on.png" width="600">
 
 # 📊 BASES_ON
 
